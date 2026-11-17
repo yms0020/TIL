@@ -41,7 +41,7 @@ bool result = bool.TryParse(success, out bool isSuccess);
 | null 입력 | 예외 발생 | false 반환 |
 
 
-# 3. null 조건부 연산자 (Null-Conditional Operator)
+# 2. null 조건부 연산자 (Null-Conditional Operator)
 
 => 객체가 null인지 확인하고, null이 아닐 경우에만 멤버나 요소에 접근하는 연산자
 
@@ -142,7 +142,7 @@ Console.WriteLine(result);
 - null 조건부 연산자는 null로 인한 예외를 방지할 때 사용한다.
 
 
-# 1. null 허용 경고 무시 연산자 (Null-Forgiving Operator)
+# 3. null 허용 경고 무시 연산자 (Null-Forgiving Operator)
 
 => 컴파일러에게 해당 값이 null이 아니라고 알려주어 null 관련 경고를 무시하는 연산자
 
