@@ -1,7 +1,7 @@
 # TIL
 
 # C#
-- [메서드 정리](C%23/Method.md)
+- [문법](C%23/Syntax.md)
 
 # JAVA
 
