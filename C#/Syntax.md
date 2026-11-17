@@ -41,7 +41,7 @@ bool result = bool.TryParse(success, out bool isSuccess);
 | null 입력 | 예외 발생 | false 반환 |
 
 
-# 1. null 조건부 연산자 (Null-Conditional Operator)
+# 2. null 조건부 연산자 (Null-Conditional Operator)
 
 => 객체가 null인지 확인하고, null이 아닐 경우에만 멤버나 요소에 접근하는 연산자
 
