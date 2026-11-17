@@ -227,7 +227,6 @@ int length2 = name!.Length; // 예외 발생
 
 
 
-
 # 1. null 병합 연산자 (Null-Coalescing Operator)
 
 => 왼쪽 값이 null이면 오른쪽 값을 반환하고, null이 아니면 왼쪽 값을 반환하는 연산자
