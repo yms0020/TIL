@@ -66,7 +66,7 @@ Console.WriteLine(length);
 ### 실행 결과:
 
 ```text
-
+(빈 줄 출력)
 ```
 
 => name이 null이므로 Length 속성에 접근하지 않고 null을 반환한다.
