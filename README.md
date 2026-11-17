@@ -1,7 +1,7 @@
 # TIL
 
 # C#
-- [TryParse() 정리](C%23/TryParse.md)
+- [메서드 정리](C%23/Method.md)
 
 # JAVA
 
