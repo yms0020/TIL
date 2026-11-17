@@ -41,7 +41,7 @@ bool result = bool.TryParse(success, out bool isSuccess);
 | null 입력 | 예외 발생 | false 반환 |
 
 
-# 2. null 조건부 연산자 (Null-Conditional Operator)
+# 3. null 조건부 연산자 (Null-Conditional Operator)
 
 => 객체가 null인지 확인하고, null이 아닐 경우에만 멤버나 요소에 접근하는 연산자
 
@@ -140,3 +140,88 @@ Console.WriteLine(result);
 - `?[]` : 객체가 null이 아닐 때만 인덱스로 요소에 접근
 - `??` : 왼쪽 값이 null이면 오른쪽 값을 반환
 - null 조건부 연산자는 null로 인한 예외를 방지할 때 사용한다.
+
+
+# 1. null 허용 경고 무시 연산자 (Null-Forgiving Operator)
+
+=> 컴파일러에게 해당 값이 null이 아니라고 알려주어 null 관련 경고를 무시하는 연산자
+
+### 기본 문법
+
+```csharp
+객체!.속성
+객체!.메서드()
+```
+
+### EX :
+
+```csharp
+string? name = "Hello";
+
+int length = name!.Length;
+
+Console.WriteLine(length);
+```
+
+### 실행 결과:
+
+```text
+5
+```
+
+=> name!은 컴파일러에게 name이 null이 아니라고 알려주고, Length 속성에 접근한다.
+
+| 구분 | 설명 |
+|---|---|
+| `string?` | null을 허용하는 문자열 자료형 |
+| `name` | 접근할 객체 |
+| `!` | null 관련 컴파일러 경고를 무시하는 연산자 |
+| `.` | 객체의 속성이나 메서드에 접근하는 연산자 |
+| `Length` | 문자열의 길이를 반환하는 속성 |
+| `length` | 결과를 저장하는 변수 |
+
+### null인 경우
+
+```csharp
+string? name = null;
+
+int length = name!.Length;
+
+Console.WriteLine(length);
+```
+
+### 실행 결과:
+
+```text
+NullReferenceException 발생
+```
+
+=> `!`는 실제 null 검사를 수행하지 않으므로 name이 null이면 예외가 발생한다.
+
+### null 조건부 연산자(?.)와 비교
+
+```csharp
+string? name = null;
+
+// null 조건부 연산자
+int? length1 = name?.Length; // null 반환
+
+// null 허용 경고 무시 연산자
+int length2 = name!.Length; // 예외 발생
+```
+
+| 구분 | `?.` | `!.` |
+|---|---|---|
+| 이름 | null 조건부 연산자 | null 허용 경고 무시 연산자 + 멤버 접근 |
+| null 검사 | 수행 | 수행하지 않음 |
+| null인 경우 | null 반환 | 멤버 접근 시 예외 발생 가능 |
+| 주요 목적 | null 안전하게 처리 | 컴파일러의 null 관련 경고 무시 |
+
+### 참고
+
+- `!` : 컴파일러의 null 관련 경고를 무시하는 연산자
+- `?.` : 객체가 null이 아닐 때만 멤버에 접근
+- `!`는 실제 값을 변경하지 않는다.
+- `!`는 런타임에서 null 검사를 수행하지 않는다.
+- 객체가 null이 아니라는 것이 확실할 때 사용하는 것이 좋다.
+
