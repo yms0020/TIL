@@ -6,7 +6,7 @@
 # JAVA
 
 # ORACLE
-
+- [MERGE](ORACLE/MERGE.md)
 # GIT-TOOL
 
 # CS
