@@ -4,8 +4,8 @@
 - [문법](C%23/Syntax.md)
 
 # JAVA
-- [String 메서드](JAVA/String메서드.md)
-- [List 메서드](JAVA/List메서드.md)
+- [String 메서드](JAVA/String%20메서드.md)
+- [List 메서드](JAVA/List%20메서드.md)
 
 # ORACLE
 - [MERGE](ORACLE/MERGE.md)
