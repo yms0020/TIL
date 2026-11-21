@@ -1,5 +1,5 @@
 
-# Java String 메서드 정리
+# String 메서드 정리
 
 Java 백엔드 실무에서 자주 사용하는 `String` 메서드를 우선순위별로 정리한다.
 
