@@ -1,1 +1,5 @@
-
+-- 문제: 자동차 대여 기록에서 장기/단기 대여 구분하기
+-- 플랫폼: 프로그래머스
+-- 언어: Oracle
+-- 난이도: Level 1
+-- URL: https://school.programmers.co.kr/learn/courses/30/lessons/151138
