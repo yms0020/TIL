@@ -3,3 +3,11 @@
 -- 언어: Oracle
 -- 난이도: Level 1
 -- URL: https://school.programmers.co.kr/learn/courses/30/lessons/133025
+
+내 답:
+SELECT T.FLAVOR
+FROM FIRST_HALF T,ICECREAM_INFO S
+WHERE T.FLAVOR = S.FLAVOR 
+AND T.TOTAL_ORDER > 3000 
+AND S.INGREDIENT_TYPE = 'fruit_based'
+ORDER BY T.TOTAL_ORDER DESC;
