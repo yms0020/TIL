@@ -9,7 +9,7 @@
 
 # ORACLE
 - [MERGE](ORACLE/MERGE.md)
-- [인젝션 sql](ORACLE/인젝션%20sql.md)
+- [SQL인젝션](ORACLE/sql%20인젝션.md)
 - [Level1](ORACLE/Level1)
 - [Level2](ORACLE/Level2)
 # GIT-TOOL
