@@ -17,3 +17,4 @@
 - [컴파일 또는 런타임](CS/Compile-Time-vs-Runtime.md)
 
 # ETC
+- [트랜잭션](ETC/트랜잭션.md)
