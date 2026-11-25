@@ -1,4 +1,8 @@
-https://school.programmers.co.kr/learn/courses/30/lessons/157342
+-- 문제: 자동차 평균 대여 기간 구하기
+-- 플랫폼: 프로그래머스
+-- 언어: Oracle
+-- 난이도: Level 2
+-- URL: https://school.programmers.co.kr/learn/courses/30/lessons/157342
 내 답:
 SELECT CAR_ID,ROUND(AVG(END_DATE - START_DATE + 1),1) AS AVERAGE_DURATION //END_DATE - START_DATE : 두 날짜 사이의 경과 일수
 FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY                                    //END_DATE - START_DATE + 1 : 시작일과 종료일을 모두 포함한 일수
