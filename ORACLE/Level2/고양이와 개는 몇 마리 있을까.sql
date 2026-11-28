@@ -1,4 +1,8 @@
-https://school.programmers.co.kr/learn/courses/30/lessons/59040
+-- 문제: 고양이와 개는 몇 마리 있을까
+-- 플랫폼: 프로그래머스
+-- 언어: Oracle
+-- 난이도: Level 2
+-- URL: https://school.programmers.co.kr/learn/courses/30/lessons/59040
 내 답:
 SELECT ANIMAL_TYPE,COUNT(ANIMAL_TYPE) AS count
 FROM ANIMAL_INS
